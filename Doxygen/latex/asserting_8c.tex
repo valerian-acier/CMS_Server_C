@@ -1,0 +1,103 @@
+\hypertarget{asserting_8c}{}\section{Tests/asserting.c File Reference}
+\label{asserting_8c}\index{Tests/asserting.\+c@{Tests/asserting.\+c}}
+{\ttfamily \#include \char`\"{}asserting.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$signal.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{asserting_8c_a4476ac07e4b7fb519abcff414b58e424}{assert\+H\+T\+M\+L\+Equals}} (char $\ast$title, char $\ast$expected, char $\ast$actual)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour verifier la différence entre un texte et du contenu H\+T\+ML. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{asserting_8c_af8a65a3bfe170c6fe14ba7664c5744f3}{assert\+File\+Equals}} (char $\ast$title, char $\ast$original, char $\ast$crypted\+\_\+uncrypted)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour verifier la différence entre deux fichiers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{asserting_8c_a3d697e4a83010f46bd913ccd31065081}{assert\+Equals}} (char $\ast$title, char $\ast$expected, char $\ast$actual)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour verifier la différence entre deux chaines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+pid\+\_\+t \mbox{\hyperlink{asserting_8c_ae0d46a978d5cd6707411f276ad869b9c}{pid}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{asserting_8c_a3d697e4a83010f46bd913ccd31065081}\label{asserting_8c_a3d697e4a83010f46bd913ccd31065081}} 
+\index{asserting.\+c@{asserting.\+c}!assert\+Equals@{assert\+Equals}}
+\index{assert\+Equals@{assert\+Equals}!asserting.\+c@{asserting.\+c}}
+\subsubsection{\texorpdfstring{assert\+Equals()}{assertEquals()}}
+{\footnotesize\ttfamily void assert\+Equals (\begin{DoxyParamCaption}\item[{char $\ast$}]{title,  }\item[{char $\ast$}]{expected,  }\item[{char $\ast$}]{actual }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour verifier la différence entre deux chaines. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Le nom du test (Chaque test est nommé pour connaitre lequel echoue) \\
+\hline
+{\em expected} & Le contenu attendu \\
+\hline
+{\em actual} & Le contenu reçu \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file asserting.\+c.
+
+\mbox{\Hypertarget{asserting_8c_af8a65a3bfe170c6fe14ba7664c5744f3}\label{asserting_8c_af8a65a3bfe170c6fe14ba7664c5744f3}} 
+\index{asserting.\+c@{asserting.\+c}!assert\+File\+Equals@{assert\+File\+Equals}}
+\index{assert\+File\+Equals@{assert\+File\+Equals}!asserting.\+c@{asserting.\+c}}
+\subsubsection{\texorpdfstring{assert\+File\+Equals()}{assertFileEquals()}}
+{\footnotesize\ttfamily void assert\+File\+Equals (\begin{DoxyParamCaption}\item[{char $\ast$}]{title,  }\item[{char $\ast$}]{filename,  }\item[{char $\ast$}]{crypted\+\_\+uncrypted }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour verifier la différence entre deux fichiers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Le nom du test (Chaque test est nommé pour connaitre lequel echoue) \\
+\hline
+{\em filename} & Le path du fichier avec le contenu attendu \\
+\hline
+{\em crypted\+\_\+uncrypted} & Le path du fichier avec le contenu reçu \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file asserting.\+c.
+
+\mbox{\Hypertarget{asserting_8c_a4476ac07e4b7fb519abcff414b58e424}\label{asserting_8c_a4476ac07e4b7fb519abcff414b58e424}} 
+\index{asserting.\+c@{asserting.\+c}!assert\+H\+T\+M\+L\+Equals@{assert\+H\+T\+M\+L\+Equals}}
+\index{assert\+H\+T\+M\+L\+Equals@{assert\+H\+T\+M\+L\+Equals}!asserting.\+c@{asserting.\+c}}
+\subsubsection{\texorpdfstring{assert\+H\+T\+M\+L\+Equals()}{assertHTMLEquals()}}
+{\footnotesize\ttfamily void assert\+H\+T\+M\+L\+Equals (\begin{DoxyParamCaption}\item[{char $\ast$}]{title,  }\item[{char $\ast$}]{expected,  }\item[{char $\ast$}]{actual }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour verifier la différence entre un texte et du contenu H\+T\+ML. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Le nom du test (Chaque test est nommé pour connaitre lequel echoue) \\
+\hline
+{\em expected} & Le contenu attendu \\
+\hline
+{\em actual} & Le contenu reçu \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file asserting.\+c.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{asserting_8c_ae0d46a978d5cd6707411f276ad869b9c}\label{asserting_8c_ae0d46a978d5cd6707411f276ad869b9c}} 
+\index{asserting.\+c@{asserting.\+c}!pid@{pid}}
+\index{pid@{pid}!asserting.\+c@{asserting.\+c}}
+\subsubsection{\texorpdfstring{pid}{pid}}
+{\footnotesize\ttfamily pid\+\_\+t pid}
+
+
+
+Definition at line 33 of file main.\+h.
+

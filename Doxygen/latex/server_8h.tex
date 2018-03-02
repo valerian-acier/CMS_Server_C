@@ -1,0 +1,57 @@
+\hypertarget{server_8h}{}\section{server.\+h File Reference}
+\label{server_8h}\index{server.\+h@{server.\+h}}
+
+
+Fichier de définitions de la partie serveur.  
+
+
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{server_8h_ab55af8997b2f1a63c4f93e7213a635fd}{create\+Server}} (void($\ast$\mbox{\hyperlink{router_8h_a49dfbcf039c4dea09fed94728e98ea1e}{client\+Connected}})(int))
+\begin{DoxyCompactList}\small\item\em Fonction permettant de démarrer le serveur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichier de définitions de la partie serveur. 
+
+\begin{DoxyAuthor}{Author}
+Valerian Acier 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11 février 2018
+\end{DoxyDate}
+Définitions des différentes fonctions du serveur, elle permet pour l\textquotesingle{}instant simplement la création d\textquotesingle{}un serveur, sur le port 9090 par default, mais incrémente le port tant qu\textquotesingle{}il n\textquotesingle{}en trouve pas un disponible 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{server_8h_ab55af8997b2f1a63c4f93e7213a635fd}\label{server_8h_ab55af8997b2f1a63c4f93e7213a635fd}} 
+\index{server.\+h@{server.\+h}!create\+Server@{create\+Server}}
+\index{create\+Server@{create\+Server}!server.\+h@{server.\+h}}
+\subsubsection{\texorpdfstring{create\+Server()}{createServer()}}
+{\footnotesize\ttfamily void create\+Server (\begin{DoxyParamCaption}\item[{void($\ast$)(int)}]{client\+Connected }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de démarrer le serveur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Connected} & Pointeur sur fonction appelée lorsqu\textquotesingle{}un client va se connecter sur le serveur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file server.\+c.
+

@@ -1,0 +1,91 @@
+\hypertarget{struct__request}{}\section{\+\_\+request Struct Reference}
+\label{struct__request}\index{\+\_\+request@{\+\_\+request}}
+
+
+Structure contenant les différentes informations pour une requête d\textquotesingle{}un client.  
+
+
+
+
+{\ttfamily \#include $<$request.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{struct__request_ac30a6dcbeca564ac73913a3df8a821b9}{url}} \mbox{[}255\mbox{]}
+\item 
+char \mbox{\hyperlink{struct__request_aa97bc4e02a581ea6bb8f7b704dc1169e}{method}} \mbox{[}255\mbox{]}
+\item 
+char $\ast$$\ast$ \mbox{\hyperlink{struct__request_af2efa898e9eed6fe6715279cb1ec35b0}{argv}}
+\item 
+char $\ast$ \mbox{\hyperlink{struct__request_a085deaaceab1baf1c9408775106b2272}{post\+Data}}
+\item 
+int \mbox{\hyperlink{struct__request_a3666576f6b88007cc7b8f26c7da596c8}{socket}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure contenant les différentes informations pour une requête d\textquotesingle{}un client. 
+
+\mbox{\hyperlink{struct__request}{\+\_\+request}} est une structure contenant toute les informations envoyé par le client lors de sa connection. Elle contient l\textquotesingle{}url du client, la methode utilisée, les arguments passés (parsé en fonction de la route), ainsi que les données post et le socket du client 
+
+Definition at line 37 of file request.\+h.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct__request_af2efa898e9eed6fe6715279cb1ec35b0}\label{struct__request_af2efa898e9eed6fe6715279cb1ec35b0}} 
+\index{\+\_\+request@{\+\_\+request}!argv@{argv}}
+\index{argv@{argv}!\+\_\+request@{\+\_\+request}}
+\subsubsection{\texorpdfstring{argv}{argv}}
+{\footnotesize\ttfamily char$\ast$$\ast$ argv}
+
+
+
+Definition at line 40 of file request.\+h.
+
+\mbox{\Hypertarget{struct__request_aa97bc4e02a581ea6bb8f7b704dc1169e}\label{struct__request_aa97bc4e02a581ea6bb8f7b704dc1169e}} 
+\index{\+\_\+request@{\+\_\+request}!method@{method}}
+\index{method@{method}!\+\_\+request@{\+\_\+request}}
+\subsubsection{\texorpdfstring{method}{method}}
+{\footnotesize\ttfamily char method\mbox{[}255\mbox{]}}
+
+
+
+Definition at line 39 of file request.\+h.
+
+\mbox{\Hypertarget{struct__request_a085deaaceab1baf1c9408775106b2272}\label{struct__request_a085deaaceab1baf1c9408775106b2272}} 
+\index{\+\_\+request@{\+\_\+request}!post\+Data@{post\+Data}}
+\index{post\+Data@{post\+Data}!\+\_\+request@{\+\_\+request}}
+\subsubsection{\texorpdfstring{post\+Data}{postData}}
+{\footnotesize\ttfamily char$\ast$ post\+Data}
+
+
+
+Definition at line 41 of file request.\+h.
+
+\mbox{\Hypertarget{struct__request_a3666576f6b88007cc7b8f26c7da596c8}\label{struct__request_a3666576f6b88007cc7b8f26c7da596c8}} 
+\index{\+\_\+request@{\+\_\+request}!socket@{socket}}
+\index{socket@{socket}!\+\_\+request@{\+\_\+request}}
+\subsubsection{\texorpdfstring{socket}{socket}}
+{\footnotesize\ttfamily int socket}
+
+
+
+Definition at line 42 of file request.\+h.
+
+\mbox{\Hypertarget{struct__request_ac30a6dcbeca564ac73913a3df8a821b9}\label{struct__request_ac30a6dcbeca564ac73913a3df8a821b9}} 
+\index{\+\_\+request@{\+\_\+request}!url@{url}}
+\index{url@{url}!\+\_\+request@{\+\_\+request}}
+\subsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily char url\mbox{[}255\mbox{]}}
+
+
+
+Definition at line 38 of file request.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+M\+S/\mbox{\hyperlink{request_8h}{request.\+h}}\end{DoxyCompactItemize}

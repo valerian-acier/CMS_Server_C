@@ -1,0 +1,127 @@
+\hypertarget{log_8h}{}\section{Logs/log.h File Reference}
+\label{log_8h}\index{Logs/log.\+h@{Logs/log.\+h}}
+
+
+Fichier definissant les différentes fonctions de log.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$signal.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{log_8h_a8768dc79b66925ceb47859a9c184b694}{log\+\_\+ouvrir}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Fonction permettant l\textquotesingle{}ouverture d\textquotesingle{}un fichier de log. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{log_8h_a03f742d251d4de86d95190a461905254}{log\+\_\+ecrire}} (F\+I\+LE $\ast$f, char $\ast$content)
+\begin{DoxyCompactList}\small\item\em Fonction permettant l\textquotesingle{}écriture dans un fichier de log. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{log_8h_aef25319ab32d153415d06955e288e99f}{log\+\_\+fermer}} (F\+I\+LE $\ast$f)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de fermer le fichier de log. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{log_8h_a5b31dabbd6c3776b39343fb4e696c784}{log\+\_\+write\+\_\+to\+\_\+disk}} (F\+I\+LE $\ast$f)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de forcer l\textquotesingle{}écriture dans le fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichier definissant les différentes fonctions de log. 
+
+\begin{DoxyAuthor}{Author}
+Valerian Acier 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+26 septembre 2017
+\end{DoxyDate}
+Contient différentes déclarations de fonctions permettant l\textquotesingle{}écriture de données dans un fichier de log 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{log_8h_a03f742d251d4de86d95190a461905254}\label{log_8h_a03f742d251d4de86d95190a461905254}} 
+\index{log.\+h@{log.\+h}!log\+\_\+ecrire@{log\+\_\+ecrire}}
+\index{log\+\_\+ecrire@{log\+\_\+ecrire}!log.\+h@{log.\+h}}
+\subsubsection{\texorpdfstring{log\+\_\+ecrire()}{log\_ecrire()}}
+{\footnotesize\ttfamily int log\+\_\+ecrire (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{char $\ast$}]{content }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant l\textquotesingle{}écriture dans un fichier de log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Pointeur sur le fichier \\
+\hline
+{\em content} & Contenu à inserer dans le fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Si succés 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file log.\+c.
+
+\mbox{\Hypertarget{log_8h_aef25319ab32d153415d06955e288e99f}\label{log_8h_aef25319ab32d153415d06955e288e99f}} 
+\index{log.\+h@{log.\+h}!log\+\_\+fermer@{log\+\_\+fermer}}
+\index{log\+\_\+fermer@{log\+\_\+fermer}!log.\+h@{log.\+h}}
+\subsubsection{\texorpdfstring{log\+\_\+fermer()}{log\_fermer()}}
+{\footnotesize\ttfamily int log\+\_\+fermer (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de fermer le fichier de log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Le fichier à fermer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\+Ssi succés 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file log.\+c.
+
+\mbox{\Hypertarget{log_8h_a8768dc79b66925ceb47859a9c184b694}\label{log_8h_a8768dc79b66925ceb47859a9c184b694}} 
+\index{log.\+h@{log.\+h}!log\+\_\+ouvrir@{log\+\_\+ouvrir}}
+\index{log\+\_\+ouvrir@{log\+\_\+ouvrir}!log.\+h@{log.\+h}}
+\subsubsection{\texorpdfstring{log\+\_\+ouvrir()}{log\_ouvrir()}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ log\+\_\+ouvrir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant l\textquotesingle{}ouverture d\textquotesingle{}un fichier de log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Le chemin du fichier de log \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+F\+I\+L\+E$\ast$ Pointeur sur le fichier 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file log.\+c.
+
+\mbox{\Hypertarget{log_8h_a5b31dabbd6c3776b39343fb4e696c784}\label{log_8h_a5b31dabbd6c3776b39343fb4e696c784}} 
+\index{log.\+h@{log.\+h}!log\+\_\+write\+\_\+to\+\_\+disk@{log\+\_\+write\+\_\+to\+\_\+disk}}
+\index{log\+\_\+write\+\_\+to\+\_\+disk@{log\+\_\+write\+\_\+to\+\_\+disk}!log.\+h@{log.\+h}}
+\subsubsection{\texorpdfstring{log\+\_\+write\+\_\+to\+\_\+disk()}{log\_write\_to\_disk()}}
+{\footnotesize\ttfamily void log\+\_\+write\+\_\+to\+\_\+disk (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de forcer l\textquotesingle{}écriture dans le fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Pointeur sur le fichier \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 27 of file log.\+c.
+

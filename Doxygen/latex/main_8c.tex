@@ -1,0 +1,127 @@
+\hypertarget{main_8c}{}\section{main.\+c File Reference}
+\label{main_8c}\index{main.\+c@{main.\+c}}
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\item 
+void \mbox{\hyperlink{main_8c_a044e354dd21ac7c6b22ae4cea48cacd4}{signal\+Definitions}} ()
+\begin{DoxyCompactList}\small\item\em Fonction d\textquotesingle{}initialisation des signaux. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a74d55e154e2cd5c66f3eb183b1daa6c2}{routes\+Registering}} ()
+\begin{DoxyCompactList}\small\item\em Fonction de définitions des routes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_ad0a373771a887aa85634f05ba2cb8f86}{init\+Global\+Variables}} ()
+\begin{DoxyCompactList}\small\item\em Fonction d\textquotesingle{}initialisation des variables globales. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a0a4cf72359af1bd008302d21d6c24c55}{end}} (int signo)
+\begin{DoxyCompactList}\small\item\em Fonction permettant l\textquotesingle{}arrêt du serveur et de tout les fils qui ont été crées. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a29a2e36968dfcde3c925fe5a055c6c71}{set\+Tmp\+File\+Storage}} (int signo)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de modifier le dossier de stockage des fichiers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a6c4ead989f0ff0734afa74230db78598}{execute\+Testing}} ()
+\begin{DoxyCompactList}\small\item\em Lance les tests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a0a4cf72359af1bd008302d21d6c24c55}\label{main_8c_a0a4cf72359af1bd008302d21d6c24c55}} 
+\index{main.\+c@{main.\+c}!end@{end}}
+\index{end@{end}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void end (\begin{DoxyParamCaption}\item[{int}]{signo }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant l\textquotesingle{}arrêt du serveur et de tout les fils qui ont été crées. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em signo} & Le numéro du signal (S\+I\+G\+T\+E\+RM) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 91 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a6c4ead989f0ff0734afa74230db78598}\label{main_8c_a6c4ead989f0ff0734afa74230db78598}} 
+\index{main.\+c@{main.\+c}!execute\+Testing@{execute\+Testing}}
+\index{execute\+Testing@{execute\+Testing}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{execute\+Testing()}{executeTesting()}}
+{\footnotesize\ttfamily void execute\+Testing (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Lance les tests. 
+
+
+
+Definition at line 102 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_ad0a373771a887aa85634f05ba2cb8f86}\label{main_8c_ad0a373771a887aa85634f05ba2cb8f86}} 
+\index{main.\+c@{main.\+c}!init\+Global\+Variables@{init\+Global\+Variables}}
+\index{init\+Global\+Variables@{init\+Global\+Variables}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{init\+Global\+Variables()}{initGlobalVariables()}}
+{\footnotesize\ttfamily void init\+Global\+Variables (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction d\textquotesingle{}initialisation des variables globales. 
+
+
+
+Definition at line 85 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.\+c@{main.\+c}!main@{main}}
+\index{main@{main}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a74d55e154e2cd5c66f3eb183b1daa6c2}\label{main_8c_a74d55e154e2cd5c66f3eb183b1daa6c2}} 
+\index{main.\+c@{main.\+c}!routes\+Registering@{routes\+Registering}}
+\index{routes\+Registering@{routes\+Registering}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{routes\+Registering()}{routesRegistering()}}
+{\footnotesize\ttfamily void routes\+Registering (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction de définitions des routes. 
+
+
+
+Definition at line 45 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a29a2e36968dfcde3c925fe5a055c6c71}\label{main_8c_a29a2e36968dfcde3c925fe5a055c6c71}} 
+\index{main.\+c@{main.\+c}!set\+Tmp\+File\+Storage@{set\+Tmp\+File\+Storage}}
+\index{set\+Tmp\+File\+Storage@{set\+Tmp\+File\+Storage}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{set\+Tmp\+File\+Storage()}{setTmpFileStorage()}}
+{\footnotesize\ttfamily void set\+Tmp\+File\+Storage (\begin{DoxyParamCaption}\item[{int}]{signo }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de modifier le dossier de stockage des fichiers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em signo} & Le numéro du signal (S\+I\+G\+U\+S\+R1) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 95 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a044e354dd21ac7c6b22ae4cea48cacd4}\label{main_8c_a044e354dd21ac7c6b22ae4cea48cacd4}} 
+\index{main.\+c@{main.\+c}!signal\+Definitions@{signal\+Definitions}}
+\index{signal\+Definitions@{signal\+Definitions}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{signal\+Definitions()}{signalDefinitions()}}
+{\footnotesize\ttfamily void signal\+Definitions (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Fonction d\textquotesingle{}initialisation des signaux. 
+
+
+
+Definition at line 32 of file main.\+c.
+

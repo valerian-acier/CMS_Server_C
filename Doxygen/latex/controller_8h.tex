@@ -1,0 +1,288 @@
+\hypertarget{controller_8h}{}\section{C\+M\+S/controller.h File Reference}
+\label{controller_8h}\index{C\+M\+S/controller.\+h@{C\+M\+S/controller.\+h}}
+
+
+Fichier de définitions de la logique des routes.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$dirent.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}router.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{controller_8h_aaa8b64e5148763e056cb25ac99dd977b}{search\+For\+File}} (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$re)
+\begin{DoxyCompactList}\small\item\em Fonction appelée lorsque aucune route n\textquotesingle{}est trouvée, elle va chercher pour un fichier correspondant à la route pour le renvoyer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{controller_8h_a19fc37b934dd888b3f2906138690be9f}{stock\+Image}} (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$re)
+\begin{DoxyCompactList}\small\item\em $\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$\+S\+U\+J\+ET G\+R\+O\+U\+PE 1$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$// \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{controller_8h_a0fac4bcfdd2cd2927857b434729f4ddd}{display\+Image}} (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$re)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour afficher une des images qui a été enregistée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{controller_8h_a7e81ae0eb4410db8fffbc4fe72334ff0}{crypt\+Mot}} (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$re)
+\begin{DoxyCompactList}\small\item\em $\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$\+S\+U\+J\+ET G\+R\+O\+U\+PE 2$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$// \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{controller_8h_a2f5b337b89993ee96090000a1d57dc39}{decrypt\+Mot}} (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$re)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour décrypter un code César d\textquotesingle{}un mot envoyé en G\+ET. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{controller_8h_abb5d0a441bf4d567d89b3d7260248f20}{crypt\+Mot\+Post}} (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$re)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour crypter un code César de données envoyé en P\+O\+ST. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{controller_8h_a09d53715825032e1091ed6115a5be7b7}{decrypt\+Mot\+Post}} (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$re)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour décrypter un code César de données envoyé en P\+O\+ST. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{controller_8h_a48035ed2f892b629e3611e6608e3bc0e}{crypt\+File}} (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$re)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour crypter un fichier en code César envoyé via la méthode H\+T\+TP U\+P\+L\+O\+AD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{controller_8h_a52bcf5bce1f7c93a5b9c4b76916c4f77}{decrypt\+File}} (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$re)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour décrypter un fichier en code César envoyé via la méthode H\+T\+TP U\+P\+L\+O\+AD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{controller_8h_abfe68d64c4c412b0782adfec16adcb9d}{stock\+File}} (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$re)
+\begin{DoxyCompactList}\small\item\em $\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$\+S\+U\+J\+ET G\+R\+O\+U\+PE 3$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$// \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{controller_8h_a5a5204df4dc75088b859df43450aa593}{get\+File}} (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$re)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour récupérer un des fichiers qui a été compressé \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{controller_8h_af2b6e50222a66af8b6ddd6cb3bdd920e}{display\+Files}} (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$re)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour afficher la liste des fichiers stockés dans le serveur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichier de définitions de la logique des routes. 
+
+\begin{DoxyAuthor}{Author}
+Valerian Acier 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 février 2018
+\end{DoxyDate}
+Définitions des différentes fonctions appellées par des routes elles constituents l\textquotesingle{}ensemble des routes appelable via le routeur 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{controller_8h_a48035ed2f892b629e3611e6608e3bc0e}\label{controller_8h_a48035ed2f892b629e3611e6608e3bc0e}} 
+\index{controller.\+h@{controller.\+h}!crypt\+File@{crypt\+File}}
+\index{crypt\+File@{crypt\+File}!controller.\+h@{controller.\+h}}
+\subsubsection{\texorpdfstring{crypt\+File()}{cryptFile()}}
+{\footnotesize\ttfamily void crypt\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{re }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour crypter un fichier en code César envoyé via la méthode H\+T\+TP U\+P\+L\+O\+AD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em re} & Contient les différentes informations sur la requête de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file controller.\+c.
+
+\mbox{\Hypertarget{controller_8h_a7e81ae0eb4410db8fffbc4fe72334ff0}\label{controller_8h_a7e81ae0eb4410db8fffbc4fe72334ff0}} 
+\index{controller.\+h@{controller.\+h}!crypt\+Mot@{crypt\+Mot}}
+\index{crypt\+Mot@{crypt\+Mot}!controller.\+h@{controller.\+h}}
+\subsubsection{\texorpdfstring{crypt\+Mot()}{cryptMot()}}
+{\footnotesize\ttfamily void crypt\+Mot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{re }\end{DoxyParamCaption})}
+
+
+
+$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$\+S\+U\+J\+ET G\+R\+O\+U\+PE 2$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$// 
+
+Fonction appelée pour crypter en code César d\textquotesingle{}un mot envoyé en G\+ET
+
+
+\begin{DoxyParams}{Parameters}
+{\em re} & Contient les différentes informations sur la requête de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 8 of file controller.\+c.
+
+\mbox{\Hypertarget{controller_8h_abb5d0a441bf4d567d89b3d7260248f20}\label{controller_8h_abb5d0a441bf4d567d89b3d7260248f20}} 
+\index{controller.\+h@{controller.\+h}!crypt\+Mot\+Post@{crypt\+Mot\+Post}}
+\index{crypt\+Mot\+Post@{crypt\+Mot\+Post}!controller.\+h@{controller.\+h}}
+\subsubsection{\texorpdfstring{crypt\+Mot\+Post()}{cryptMotPost()}}
+{\footnotesize\ttfamily void crypt\+Mot\+Post (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{re }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour crypter un code César de données envoyé en P\+O\+ST. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em re} & Contient les différentes informations sur la requête de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file controller.\+c.
+
+\mbox{\Hypertarget{controller_8h_a52bcf5bce1f7c93a5b9c4b76916c4f77}\label{controller_8h_a52bcf5bce1f7c93a5b9c4b76916c4f77}} 
+\index{controller.\+h@{controller.\+h}!decrypt\+File@{decrypt\+File}}
+\index{decrypt\+File@{decrypt\+File}!controller.\+h@{controller.\+h}}
+\subsubsection{\texorpdfstring{decrypt\+File()}{decryptFile()}}
+{\footnotesize\ttfamily void decrypt\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{re }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour décrypter un fichier en code César envoyé via la méthode H\+T\+TP U\+P\+L\+O\+AD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em re} & Contient les différentes informations sur la requête de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file controller.\+c.
+
+\mbox{\Hypertarget{controller_8h_a2f5b337b89993ee96090000a1d57dc39}\label{controller_8h_a2f5b337b89993ee96090000a1d57dc39}} 
+\index{controller.\+h@{controller.\+h}!decrypt\+Mot@{decrypt\+Mot}}
+\index{decrypt\+Mot@{decrypt\+Mot}!controller.\+h@{controller.\+h}}
+\subsubsection{\texorpdfstring{decrypt\+Mot()}{decryptMot()}}
+{\footnotesize\ttfamily void decrypt\+Mot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{re }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour décrypter un code César d\textquotesingle{}un mot envoyé en G\+ET. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em re} & Contient les différentes informations sur la requête de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 12 of file controller.\+c.
+
+\mbox{\Hypertarget{controller_8h_a09d53715825032e1091ed6115a5be7b7}\label{controller_8h_a09d53715825032e1091ed6115a5be7b7}} 
+\index{controller.\+h@{controller.\+h}!decrypt\+Mot\+Post@{decrypt\+Mot\+Post}}
+\index{decrypt\+Mot\+Post@{decrypt\+Mot\+Post}!controller.\+h@{controller.\+h}}
+\subsubsection{\texorpdfstring{decrypt\+Mot\+Post()}{decryptMotPost()}}
+{\footnotesize\ttfamily void decrypt\+Mot\+Post (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{re }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour décrypter un code César de données envoyé en P\+O\+ST. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em re} & Contient les différentes informations sur la requête de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file controller.\+c.
+
+\mbox{\Hypertarget{controller_8h_af2b6e50222a66af8b6ddd6cb3bdd920e}\label{controller_8h_af2b6e50222a66af8b6ddd6cb3bdd920e}} 
+\index{controller.\+h@{controller.\+h}!display\+Files@{display\+Files}}
+\index{display\+Files@{display\+Files}!controller.\+h@{controller.\+h}}
+\subsubsection{\texorpdfstring{display\+Files()}{displayFiles()}}
+{\footnotesize\ttfamily void display\+Files (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{re }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour afficher la liste des fichiers stockés dans le serveur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em re} & Contient les différentes informations sur la requête de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 143 of file controller.\+c.
+
+\mbox{\Hypertarget{controller_8h_a0fac4bcfdd2cd2927857b434729f4ddd}\label{controller_8h_a0fac4bcfdd2cd2927857b434729f4ddd}} 
+\index{controller.\+h@{controller.\+h}!display\+Image@{display\+Image}}
+\index{display\+Image@{display\+Image}!controller.\+h@{controller.\+h}}
+\subsubsection{\texorpdfstring{display\+Image()}{displayImage()}}
+{\footnotesize\ttfamily void display\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{re }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour afficher une des images qui a été enregistée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em re} & Contient les différentes informations sur la requête de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 88 of file controller.\+c.
+
+\mbox{\Hypertarget{controller_8h_a5a5204df4dc75088b859df43450aa593}\label{controller_8h_a5a5204df4dc75088b859df43450aa593}} 
+\index{controller.\+h@{controller.\+h}!get\+File@{get\+File}}
+\index{get\+File@{get\+File}!controller.\+h@{controller.\+h}}
+\subsubsection{\texorpdfstring{get\+File()}{getFile()}}
+{\footnotesize\ttfamily void get\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{re }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour récupérer un des fichiers qui a été compressé 
+
+
+\begin{DoxyParams}{Parameters}
+{\em re} & Contient les différentes informations sur la requête de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 133 of file controller.\+c.
+
+\mbox{\Hypertarget{controller_8h_aaa8b64e5148763e056cb25ac99dd977b}\label{controller_8h_aaa8b64e5148763e056cb25ac99dd977b}} 
+\index{controller.\+h@{controller.\+h}!search\+For\+File@{search\+For\+File}}
+\index{search\+For\+File@{search\+For\+File}!controller.\+h@{controller.\+h}}
+\subsubsection{\texorpdfstring{search\+For\+File()}{searchForFile()}}
+{\footnotesize\ttfamily void search\+For\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{re }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée lorsque aucune route n\textquotesingle{}est trouvée, elle va chercher pour un fichier correspondant à la route pour le renvoyer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em re} & Contient les différentes informations sur la requête de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file controller.\+c.
+
+\mbox{\Hypertarget{controller_8h_abfe68d64c4c412b0782adfec16adcb9d}\label{controller_8h_abfe68d64c4c412b0782adfec16adcb9d}} 
+\index{controller.\+h@{controller.\+h}!stock\+File@{stock\+File}}
+\index{stock\+File@{stock\+File}!controller.\+h@{controller.\+h}}
+\subsubsection{\texorpdfstring{stock\+File()}{stockFile()}}
+{\footnotesize\ttfamily void stock\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{re }\end{DoxyParamCaption})}
+
+
+
+$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$\+S\+U\+J\+ET G\+R\+O\+U\+PE 3$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$// 
+
+Fonction appelée pour stocker un fichier sur le serveur, le fichier va être compressé dans un dossier spécifique
+
+
+\begin{DoxyParams}{Parameters}
+{\em re} & Contient les différentes informations sur la requête de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 103 of file controller.\+c.
+
+\mbox{\Hypertarget{controller_8h_a19fc37b934dd888b3f2906138690be9f}\label{controller_8h_a19fc37b934dd888b3f2906138690be9f}} 
+\index{controller.\+h@{controller.\+h}!stock\+Image@{stock\+Image}}
+\index{stock\+Image@{stock\+Image}!controller.\+h@{controller.\+h}}
+\subsubsection{\texorpdfstring{stock\+Image()}{stockImage()}}
+{\footnotesize\ttfamily void stock\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{re }\end{DoxyParamCaption})}
+
+
+
+$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$\+S\+U\+J\+ET G\+R\+O\+U\+PE 1$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$// 
+
+Fonction appelée pour stocker une image, l\textquotesingle{}image va être stockée en base64 en interne
+
+
+\begin{DoxyParams}{Parameters}
+{\em re} & Contient les différentes informations sur la requête de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 57 of file controller.\+c.
+

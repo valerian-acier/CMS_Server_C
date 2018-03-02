@@ -1,0 +1,196 @@
+\hypertarget{testing_8c}{}\section{Tests/testing.c File Reference}
+\label{testing_8c}\index{Tests/testing.\+c@{Tests/testing.\+c}}
+{\ttfamily \#include \char`\"{}testing.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}helpers.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{testing_8c_ac655a49864ab02ee5c18694c9d580fb4}{initiate\+Local\+T\+CP}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{testing_8c_ade73cb5cea7dcc5e38872fbab8a3d27a}{get}} (char $\ast$url)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour réaliser une requête G\+ET sur une url. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{testing_8c_a2df7205d8c4dd8c86eb975f7ac17815c}{get\+Request}} (char $\ast$url)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour réaliser l\textquotesingle{}initalisation d\textquotesingle{}une requête G\+ET, renvoi le socket, sans aucun traitement. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{testing_8c_aa17e30d8c830e8a8d60239dfe8c8971f}{post}} (char $\ast$url, char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour réaliser une requête P\+O\+ST sur une url. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{testing_8c_aa314f98dd0f3482645577b0d0440c819}{upload}} (char $\ast$url, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour réaliser l\textquotesingle{}upload d\textquotesingle{}un fichier sur une url. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{testing_8c_a672ffd3c4ec7c60f05fcb153edb11647}{upload\+And\+Get\+Result}} (char $\ast$url, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour réaliser l\textquotesingle{}upload d\textquotesingle{}un fichier sur une url et récuperer le contenu de la page renvoyé \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{testing_8c_ad1f25a815199ac9d9f006363180f3638}{upload\+And\+Download\+Result}} (char $\ast$url, char $\ast$filename, char $\ast$resultfilename)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour réaliser l\textquotesingle{}upload d\textquotesingle{}un fichier sur une url et stocker le résultat dans un autre fichier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{testing_8c_a5b578c4af3169279eb20df5d555c4bb5}{get\+And\+Download\+Result}} (char $\ast$url, char $\ast$resultfilename)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour réaliser une requête G\+ET sur une url et stocker le résultat dans un autre fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{testing_8c_ade73cb5cea7dcc5e38872fbab8a3d27a}\label{testing_8c_ade73cb5cea7dcc5e38872fbab8a3d27a}} 
+\index{testing.\+c@{testing.\+c}!get@{get}}
+\index{get@{get}!testing.\+c@{testing.\+c}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily char $\ast$ get (\begin{DoxyParamCaption}\item[{char $\ast$}]{url }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour réaliser une requête G\+ET sur une url. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+RL à appeler sur le serveur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char$\ast$ Contenu de la page renvoyé 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file testing.\+c.
+
+\mbox{\Hypertarget{testing_8c_a5b578c4af3169279eb20df5d555c4bb5}\label{testing_8c_a5b578c4af3169279eb20df5d555c4bb5}} 
+\index{testing.\+c@{testing.\+c}!get\+And\+Download\+Result@{get\+And\+Download\+Result}}
+\index{get\+And\+Download\+Result@{get\+And\+Download\+Result}!testing.\+c@{testing.\+c}}
+\subsubsection{\texorpdfstring{get\+And\+Download\+Result()}{getAndDownloadResult()}}
+{\footnotesize\ttfamily void get\+And\+Download\+Result (\begin{DoxyParamCaption}\item[{char $\ast$}]{url,  }\item[{char $\ast$}]{resultfilename }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour réaliser une requête G\+ET sur une url et stocker le résultat dans un autre fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+RL à appeler sur le serveur \\
+\hline
+{\em resultfilename} & Path vers le fichier dans lequel stocker le résultat \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 132 of file testing.\+c.
+
+\mbox{\Hypertarget{testing_8c_a2df7205d8c4dd8c86eb975f7ac17815c}\label{testing_8c_a2df7205d8c4dd8c86eb975f7ac17815c}} 
+\index{testing.\+c@{testing.\+c}!get\+Request@{get\+Request}}
+\index{get\+Request@{get\+Request}!testing.\+c@{testing.\+c}}
+\subsubsection{\texorpdfstring{get\+Request()}{getRequest()}}
+{\footnotesize\ttfamily char $\ast$ get\+Request (\begin{DoxyParamCaption}\item[{char $\ast$}]{url }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour réaliser l\textquotesingle{}initalisation d\textquotesingle{}une requête G\+ET, renvoi le socket, sans aucun traitement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+RL à appeler sur le serveur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Socket vers le serveur 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file testing.\+c.
+
+\mbox{\Hypertarget{testing_8c_ac655a49864ab02ee5c18694c9d580fb4}\label{testing_8c_ac655a49864ab02ee5c18694c9d580fb4}} 
+\index{testing.\+c@{testing.\+c}!initiate\+Local\+T\+CP@{initiate\+Local\+T\+CP}}
+\index{initiate\+Local\+T\+CP@{initiate\+Local\+T\+CP}!testing.\+c@{testing.\+c}}
+\subsubsection{\texorpdfstring{initiate\+Local\+T\+C\+P()}{initiateLocalTCP()}}
+{\footnotesize\ttfamily int initiate\+Local\+T\+CP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file testing.\+c.
+
+\mbox{\Hypertarget{testing_8c_aa17e30d8c830e8a8d60239dfe8c8971f}\label{testing_8c_aa17e30d8c830e8a8d60239dfe8c8971f}} 
+\index{testing.\+c@{testing.\+c}!post@{post}}
+\index{post@{post}!testing.\+c@{testing.\+c}}
+\subsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily void post (\begin{DoxyParamCaption}\item[{char $\ast$}]{url,  }\item[{char $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour réaliser une requête P\+O\+ST sur une url. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+RL à appeler sur le serveur \\
+\hline
+{\em data} & Les données P\+O\+ST à envoyer avec la requête \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char$\ast$ Contenu de la page renvoyé 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file testing.\+c.
+
+\mbox{\Hypertarget{testing_8c_aa314f98dd0f3482645577b0d0440c819}\label{testing_8c_aa314f98dd0f3482645577b0d0440c819}} 
+\index{testing.\+c@{testing.\+c}!upload@{upload}}
+\index{upload@{upload}!testing.\+c@{testing.\+c}}
+\subsubsection{\texorpdfstring{upload()}{upload()}}
+{\footnotesize\ttfamily int upload (\begin{DoxyParamCaption}\item[{char $\ast$}]{url,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour réaliser l\textquotesingle{}upload d\textquotesingle{}un fichier sur une url. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+RL à appeler sur le serveur \\
+\hline
+{\em filename} & Path vers le fichier à upload \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Le socket vers le serveur 
+\end{DoxyReturn}
+
+
+Definition at line 84 of file testing.\+c.
+
+\mbox{\Hypertarget{testing_8c_ad1f25a815199ac9d9f006363180f3638}\label{testing_8c_ad1f25a815199ac9d9f006363180f3638}} 
+\index{testing.\+c@{testing.\+c}!upload\+And\+Download\+Result@{upload\+And\+Download\+Result}}
+\index{upload\+And\+Download\+Result@{upload\+And\+Download\+Result}!testing.\+c@{testing.\+c}}
+\subsubsection{\texorpdfstring{upload\+And\+Download\+Result()}{uploadAndDownloadResult()}}
+{\footnotesize\ttfamily void upload\+And\+Download\+Result (\begin{DoxyParamCaption}\item[{char $\ast$}]{url,  }\item[{char $\ast$}]{filename,  }\item[{char $\ast$}]{resultfilename }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour réaliser l\textquotesingle{}upload d\textquotesingle{}un fichier sur une url et stocker le résultat dans un autre fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+RL à appeler sur le serveur \\
+\hline
+{\em filename} & Path vers le fichier à upload \\
+\hline
+{\em filenameresult} & Path vers le fichier dans lequel stocker le résultat \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 111 of file testing.\+c.
+
+\mbox{\Hypertarget{testing_8c_a672ffd3c4ec7c60f05fcb153edb11647}\label{testing_8c_a672ffd3c4ec7c60f05fcb153edb11647}} 
+\index{testing.\+c@{testing.\+c}!upload\+And\+Get\+Result@{upload\+And\+Get\+Result}}
+\index{upload\+And\+Get\+Result@{upload\+And\+Get\+Result}!testing.\+c@{testing.\+c}}
+\subsubsection{\texorpdfstring{upload\+And\+Get\+Result()}{uploadAndGetResult()}}
+{\footnotesize\ttfamily void upload\+And\+Get\+Result (\begin{DoxyParamCaption}\item[{char $\ast$}]{url,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour réaliser l\textquotesingle{}upload d\textquotesingle{}un fichier sur une url et récuperer le contenu de la page renvoyé 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+RL à appeler sur le serveur \\
+\hline
+{\em filename} & Path vers le fichier à upload \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char$\ast$ Contenu de la page renvoyé 
+\end{DoxyReturn}
+
+
+Definition at line 106 of file testing.\+c.
+

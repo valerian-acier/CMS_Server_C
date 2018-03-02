@@ -1,0 +1,131 @@
+\hypertarget{router_8h}{}\section{C\+M\+S/router.h File Reference}
+\label{router_8h}\index{C\+M\+S/router.\+h@{C\+M\+S/router.\+h}}
+
+
+Fichier de définitions de la gestion des routes.  
+
+
+{\ttfamily \#include \char`\"{}request.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__route}{\+\_\+route}}
+\begin{DoxyCompactList}\small\item\em Liste chainée de routes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{router_8h_ac5c1e9ded8b218a0a33f605347a32e5d}{H\+T\+TP}}~\char`\"{}H\+T\+TP/1.\+1 200 O\+K\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__route}{\+\_\+route}} \mbox{\hyperlink{router_8h_a6d4119ec4e83ffaa3919766d33076315}{route}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{router_8h_a951586bba976d451a9d8f75b45d858b3}{register\+Route}} (\mbox{\hyperlink{router_8h_a6d4119ec4e83ffaa3919766d33076315}{route}} $\ast$$\ast$\mbox{\hyperlink{main_8h_abc7b1bea874e3e50d6f886e20f4606f1}{router}}, char $\ast$method, char $\ast$url, int argc, void($\ast$controller\+Action)(\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$))
+\begin{DoxyCompactList}\small\item\em Fonction d\textquotesingle{}enregistrement d\textquotesingle{}une route, qui va l\textquotesingle{}ajouter dans la liste chainée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{router_8h_aa219775843f87d87442bb0056b492f24}{call\+Controller\+Action}} (\mbox{\hyperlink{router_8h_a6d4119ec4e83ffaa3919766d33076315}{route}} $\ast$\mbox{\hyperlink{main_8h_abc7b1bea874e3e50d6f886e20f4606f1}{router}}, \mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}})
+\item 
+void \mbox{\hyperlink{router_8h_a49dfbcf039c4dea09fed94728e98ea1e}{client\+Connected}} (int socket)
+\begin{DoxyCompactList}\small\item\em Fonction appelée lorsqu\textquotesingle{}un client vient de se connecter au serveur, va parser la requête de l\textquotesingle{}utilisateur et gérer la route appelée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichier de définitions de la gestion des routes. 
+
+\begin{DoxyAuthor}{Author}
+Valerian Acier 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 février 2018
+\end{DoxyDate}
+Définitions des différentes fonctions pour la gestion des routes, permet un code plus lisible en segmentant la partie redirection des routes et traitement du client et de la partie \char`\"{}logique\char`\"{} contenue dans le fichier controller 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{router_8h_ac5c1e9ded8b218a0a33f605347a32e5d}\label{router_8h_ac5c1e9ded8b218a0a33f605347a32e5d}} 
+\index{router.\+h@{router.\+h}!H\+T\+TP@{H\+T\+TP}}
+\index{H\+T\+TP@{H\+T\+TP}!router.\+h@{router.\+h}}
+\subsubsection{\texorpdfstring{H\+T\+TP}{HTTP}}
+{\footnotesize\ttfamily \#define H\+T\+TP~\char`\"{}H\+T\+TP/1.\+1 200 O\+K\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n\char`\"{}}
+
+
+
+Definition at line 21 of file router.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{router_8h_a6d4119ec4e83ffaa3919766d33076315}\label{router_8h_a6d4119ec4e83ffaa3919766d33076315}} 
+\index{router.\+h@{router.\+h}!route@{route}}
+\index{route@{route}!router.\+h@{router.\+h}}
+\subsubsection{\texorpdfstring{route}{route}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__route}{\+\_\+route}} \mbox{\hyperlink{router_8h_a6d4119ec4e83ffaa3919766d33076315}{route}}}
+
+
+
+Definition at line 41 of file router.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{router_8h_aa219775843f87d87442bb0056b492f24}\label{router_8h_aa219775843f87d87442bb0056b492f24}} 
+\index{router.\+h@{router.\+h}!call\+Controller\+Action@{call\+Controller\+Action}}
+\index{call\+Controller\+Action@{call\+Controller\+Action}!router.\+h@{router.\+h}}
+\subsubsection{\texorpdfstring{call\+Controller\+Action()}{callControllerAction()}}
+{\footnotesize\ttfamily void call\+Controller\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{router_8h_a6d4119ec4e83ffaa3919766d33076315}{route}} $\ast$}]{router,  }\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{request }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file router.\+c.
+
+\mbox{\Hypertarget{router_8h_a49dfbcf039c4dea09fed94728e98ea1e}\label{router_8h_a49dfbcf039c4dea09fed94728e98ea1e}} 
+\index{router.\+h@{router.\+h}!client\+Connected@{client\+Connected}}
+\index{client\+Connected@{client\+Connected}!router.\+h@{router.\+h}}
+\subsubsection{\texorpdfstring{client\+Connected()}{clientConnected()}}
+{\footnotesize\ttfamily void client\+Connected (\begin{DoxyParamCaption}\item[{int}]{socket }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée lorsqu\textquotesingle{}un client vient de se connecter au serveur, va parser la requête de l\textquotesingle{}utilisateur et gérer la route appelée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket} & Le socket du client venant de se connecter au serveur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file router.\+c.
+
+\mbox{\Hypertarget{router_8h_a951586bba976d451a9d8f75b45d858b3}\label{router_8h_a951586bba976d451a9d8f75b45d858b3}} 
+\index{router.\+h@{router.\+h}!register\+Route@{register\+Route}}
+\index{register\+Route@{register\+Route}!router.\+h@{router.\+h}}
+\subsubsection{\texorpdfstring{register\+Route()}{registerRoute()}}
+{\footnotesize\ttfamily void register\+Route (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{router_8h_a6d4119ec4e83ffaa3919766d33076315}{route}} $\ast$$\ast$}]{router,  }\item[{char $\ast$}]{method,  }\item[{char $\ast$}]{url,  }\item[{int}]{argc,  }\item[{void($\ast$)(\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$)}]{controller\+Action }\end{DoxyParamCaption})}
+
+
+
+Fonction d\textquotesingle{}enregistrement d\textquotesingle{}une route, qui va l\textquotesingle{}ajouter dans la liste chainée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em router} & Pointeur vers l\textquotesingle{}adresse du router (le routeur peut être N\+U\+LL) en revanche le pointeur vers celui ci ne peut être N\+U\+LL (route $\ast$$\ast$router -\/$>$ 0x00000a $\vert$ N\+U\+LL) \\
+\hline
+{\em method} & Méthode H\+T\+TP de la route permettant d\textquotesingle{}identifier le type de requête (G\+ET / P\+O\+ST / P\+UT / U\+P\+L\+O\+AD etc...) \\
+\hline
+{\em url} & U\+RL de la route \\
+\hline
+{\em argc} & Nombre d\textquotesingle{}argument prit par la route (séparé par des slashs) \\
+\hline
+{\em controller\+Action} & Fonction à appeler lorsque cette route est appellée \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file router.\+c.
+

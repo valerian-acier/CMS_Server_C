@@ -1,0 +1,142 @@
+\hypertarget{helpers_8c}{}\section{Utils/helpers.c File Reference}
+\label{helpers_8c}\index{Utils/helpers.\+c@{Utils/helpers.\+c}}
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}helpers.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/wait.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{helpers_8c_a65314ede9be8799048771161a9589f2b}{B\+U\+F\+F\+L\+EN}}~1024
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{helpers_8c_ac44d21f447e9de8ed3ae173e80a7087a}{read\+To\+Write}} (int read\+Filedes, int write\+Filedes)
+\begin{DoxyCompactList}\small\item\em Fonction utilitaire permettant d\textquotesingle{}écrire dans un flux le contenu d\textquotesingle{}un autre flux. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{helpers_8c_a34031008d214b563c136e50dd1ae7e81}{to\+File}} (int filedes, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Fonction utilitaire permettant d\textquotesingle{}écrire le contenu d\textquotesingle{}un flux dans un fichier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{helpers_8c_a9a1945a0f33f57fd9cbebe39bb136300}{uniqid}} (char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Fonction utilitaire permettant de generer un ID unique (fonction prise de P\+HP) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{helpers_8c_a9469eb67ff40078098841f11162c3f5e}{crypt\+Exec}} (char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Fonction utilitaire permettant d\textquotesingle{}execlp le crypteur avec les arguments. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{helpers_8c_a3396138760e83df30c8ed9798f13cf5f}{decrypt\+Exec}} (char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Fonction utilitaire permettant d\textquotesingle{}execlp le decrypteur avec les arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{helpers_8c_a65314ede9be8799048771161a9589f2b}\label{helpers_8c_a65314ede9be8799048771161a9589f2b}} 
+\index{helpers.\+c@{helpers.\+c}!B\+U\+F\+F\+L\+EN@{B\+U\+F\+F\+L\+EN}}
+\index{B\+U\+F\+F\+L\+EN@{B\+U\+F\+F\+L\+EN}!helpers.\+c@{helpers.\+c}}
+\subsubsection{\texorpdfstring{B\+U\+F\+F\+L\+EN}{BUFFLEN}}
+{\footnotesize\ttfamily \#define B\+U\+F\+F\+L\+EN~1024}
+
+
+
+Definition at line 18 of file helpers.\+c.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{helpers_8c_a9469eb67ff40078098841f11162c3f5e}\label{helpers_8c_a9469eb67ff40078098841f11162c3f5e}} 
+\index{helpers.\+c@{helpers.\+c}!crypt\+Exec@{crypt\+Exec}}
+\index{crypt\+Exec@{crypt\+Exec}!helpers.\+c@{helpers.\+c}}
+\subsubsection{\texorpdfstring{crypt\+Exec()}{cryptExec()}}
+{\footnotesize\ttfamily void crypt\+Exec (\begin{DoxyParamCaption}\item[{char $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Fonction utilitaire permettant d\textquotesingle{}execlp le crypteur avec les arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & contenu à crypter \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 49 of file helpers.\+c.
+
+\mbox{\Hypertarget{helpers_8c_a3396138760e83df30c8ed9798f13cf5f}\label{helpers_8c_a3396138760e83df30c8ed9798f13cf5f}} 
+\index{helpers.\+c@{helpers.\+c}!decrypt\+Exec@{decrypt\+Exec}}
+\index{decrypt\+Exec@{decrypt\+Exec}!helpers.\+c@{helpers.\+c}}
+\subsubsection{\texorpdfstring{decrypt\+Exec()}{decryptExec()}}
+{\footnotesize\ttfamily void decrypt\+Exec (\begin{DoxyParamCaption}\item[{char $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Fonction utilitaire permettant d\textquotesingle{}execlp le decrypteur avec les arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & contenu à decrypter \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 65 of file helpers.\+c.
+
+\mbox{\Hypertarget{helpers_8c_ac44d21f447e9de8ed3ae173e80a7087a}\label{helpers_8c_ac44d21f447e9de8ed3ae173e80a7087a}} 
+\index{helpers.\+c@{helpers.\+c}!read\+To\+Write@{read\+To\+Write}}
+\index{read\+To\+Write@{read\+To\+Write}!helpers.\+c@{helpers.\+c}}
+\subsubsection{\texorpdfstring{read\+To\+Write()}{readToWrite()}}
+{\footnotesize\ttfamily void read\+To\+Write (\begin{DoxyParamCaption}\item[{int}]{fildes,  }\item[{int}]{fildes2 }\end{DoxyParamCaption})}
+
+
+
+Fonction utilitaire permettant d\textquotesingle{}écrire dans un flux le contenu d\textquotesingle{}un autre flux. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+Fildes} & Le read file descriptor, l\textquotesingle{}endroit où on va lire les données \\
+\hline
+{\em write\+Fildes} & Le write file descriptor, l\textquotesingle{}endroit où on va écrire les données \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file helpers.\+c.
+
+\mbox{\Hypertarget{helpers_8c_a34031008d214b563c136e50dd1ae7e81}\label{helpers_8c_a34031008d214b563c136e50dd1ae7e81}} 
+\index{helpers.\+c@{helpers.\+c}!to\+File@{to\+File}}
+\index{to\+File@{to\+File}!helpers.\+c@{helpers.\+c}}
+\subsubsection{\texorpdfstring{to\+File()}{toFile()}}
+{\footnotesize\ttfamily void to\+File (\begin{DoxyParamCaption}\item[{int}]{fildes,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Fonction utilitaire permettant d\textquotesingle{}écrire le contenu d\textquotesingle{}un flux dans un fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fildes} & Le read file descriptor, l\textquotesingle{}endroit où on va lire les données \\
+\hline
+{\em filename} & Le chemin vers le fichier où on va écrire les données \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file helpers.\+c.
+
+\mbox{\Hypertarget{helpers_8c_a9a1945a0f33f57fd9cbebe39bb136300}\label{helpers_8c_a9a1945a0f33f57fd9cbebe39bb136300}} 
+\index{helpers.\+c@{helpers.\+c}!uniqid@{uniqid}}
+\index{uniqid@{uniqid}!helpers.\+c@{helpers.\+c}}
+\subsubsection{\texorpdfstring{uniqid()}{uniqid()}}
+{\footnotesize\ttfamily void uniqid (\begin{DoxyParamCaption}\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Fonction utilitaire permettant de generer un ID unique (fonction prise de P\+HP) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Pointeur vers l\textquotesingle{}endroit où on va écrire l\textquotesingle{}id \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file helpers.\+c.
+

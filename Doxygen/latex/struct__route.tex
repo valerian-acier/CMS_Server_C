@@ -1,0 +1,91 @@
+\hypertarget{struct__route}{}\section{\+\_\+route Struct Reference}
+\label{struct__route}\index{\+\_\+route@{\+\_\+route}}
+
+
+Liste chainée de routes.  
+
+
+
+
+{\ttfamily \#include $<$router.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{struct__route_ab135e5154c1828bef226a3df98ee3333}{url}}
+\item 
+char $\ast$ \mbox{\hyperlink{struct__route_aca2544ecce27ac7a7e973d466c3a8fd4}{method}}
+\item 
+void($\ast$ \mbox{\hyperlink{struct__route_a36cb5ce2683da834da4b34eab0b3c8d5}{controller\+Action}} )(\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$)
+\item 
+int \mbox{\hyperlink{struct__route_ad1447518f4372828b8435ae82e48499e}{argc}}
+\item 
+struct \mbox{\hyperlink{struct__route}{\+\_\+route}} $\ast$ \mbox{\hyperlink{struct__route_ada4cf7708c44661b9a4297823e1633ec}{next}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Liste chainée de routes. 
+
+\mbox{\hyperlink{struct__route}{\+\_\+route}} est une liste chainées contenant les paramétres des routes. Elle contient l\textquotesingle{}url de la route, la méthode, le callback, le nombre d\textquotesingle{}argument et enfin un pointeur vers la prochaine route 
+
+Definition at line 33 of file router.\+h.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct__route_ad1447518f4372828b8435ae82e48499e}\label{struct__route_ad1447518f4372828b8435ae82e48499e}} 
+\index{\+\_\+route@{\+\_\+route}!argc@{argc}}
+\index{argc@{argc}!\+\_\+route@{\+\_\+route}}
+\subsubsection{\texorpdfstring{argc}{argc}}
+{\footnotesize\ttfamily int argc}
+
+Nombre d\textquotesingle{}argument (en G\+ET) que prend la route. 
+
+Definition at line 37 of file router.\+h.
+
+\mbox{\Hypertarget{struct__route_a36cb5ce2683da834da4b34eab0b3c8d5}\label{struct__route_a36cb5ce2683da834da4b34eab0b3c8d5}} 
+\index{\+\_\+route@{\+\_\+route}!controller\+Action@{controller\+Action}}
+\index{controller\+Action@{controller\+Action}!\+\_\+route@{\+\_\+route}}
+\subsubsection{\texorpdfstring{controller\+Action}{controllerAction}}
+{\footnotesize\ttfamily void($\ast$ controller\+Action) (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$)}
+
+fonction appellée quand la route match. 
+
+Definition at line 36 of file router.\+h.
+
+\mbox{\Hypertarget{struct__route_aca2544ecce27ac7a7e973d466c3a8fd4}\label{struct__route_aca2544ecce27ac7a7e973d466c3a8fd4}} 
+\index{\+\_\+route@{\+\_\+route}!method@{method}}
+\index{method@{method}!\+\_\+route@{\+\_\+route}}
+\subsubsection{\texorpdfstring{method}{method}}
+{\footnotesize\ttfamily char$\ast$ method}
+
+Méthode de la route. 
+
+Definition at line 35 of file router.\+h.
+
+\mbox{\Hypertarget{struct__route_ada4cf7708c44661b9a4297823e1633ec}\label{struct__route_ada4cf7708c44661b9a4297823e1633ec}} 
+\index{\+\_\+route@{\+\_\+route}!next@{next}}
+\index{next@{next}!\+\_\+route@{\+\_\+route}}
+\subsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct__route}{\+\_\+route}}$\ast$ next}
+
+Route suivante. 
+
+Definition at line 38 of file router.\+h.
+
+\mbox{\Hypertarget{struct__route_ab135e5154c1828bef226a3df98ee3333}\label{struct__route_ab135e5154c1828bef226a3df98ee3333}} 
+\index{\+\_\+route@{\+\_\+route}!url@{url}}
+\index{url@{url}!\+\_\+route@{\+\_\+route}}
+\subsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily char$\ast$ url}
+
+U\+RL de la route. 
+
+Definition at line 34 of file router.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+M\+S/\mbox{\hyperlink{router_8h}{router.\+h}}\end{DoxyCompactItemize}

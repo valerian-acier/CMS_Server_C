@@ -1,0 +1,102 @@
+\hypertarget{request_8c}{}\section{C\+M\+S/request.c File Reference}
+\label{request_8c}\index{C\+M\+S/request.\+c@{C\+M\+S/request.\+c}}
+{\ttfamily \#include \char`\"{}request.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{request_8c_af52c116fb42911fe42228b74f9e62835}{extract\+Headers\+From\+Socket}} (int socket)
+\begin{DoxyCompactList}\small\item\em Fonction utilitaire pour extraire les headers d\textquotesingle{}un socket (pour les requêtes H\+T\+TP) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$ \mbox{\hyperlink{request_8c_a239ee51386b91b472f59325c1fa05938}{read\+Request}} (int socket)
+\begin{DoxyCompactList}\small\item\em Fonction permettant le parsage de la requête via le socket (lis les données client) \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{request_8c_ac88eaa2a6df7bbc8fd5d68e6c77f6177}{read\+All}} (int std)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de récuperer tout ce qui est écrit dans un flux. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{request_8c_ab4c2d828c1868c80e27d5fdd062bd5f9}{clean\+Request}} (\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$re)
+\begin{DoxyCompactList}\small\item\em Fonction utilitaire pour désallouer la mémoire utilisée par la requête et fermer le socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{request_8c_ab4c2d828c1868c80e27d5fdd062bd5f9}\label{request_8c_ab4c2d828c1868c80e27d5fdd062bd5f9}} 
+\index{request.\+c@{request.\+c}!clean\+Request@{clean\+Request}}
+\index{clean\+Request@{clean\+Request}!request.\+c@{request.\+c}}
+\subsubsection{\texorpdfstring{clean\+Request()}{cleanRequest()}}
+{\footnotesize\ttfamily void clean\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$}]{re }\end{DoxyParamCaption})}
+
+
+
+Fonction utilitaire pour désallouer la mémoire utilisée par la requête et fermer le socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em re} & La requête à désallouer et fermer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 99 of file request.\+c.
+
+\mbox{\Hypertarget{request_8c_af52c116fb42911fe42228b74f9e62835}\label{request_8c_af52c116fb42911fe42228b74f9e62835}} 
+\index{request.\+c@{request.\+c}!extract\+Headers\+From\+Socket@{extract\+Headers\+From\+Socket}}
+\index{extract\+Headers\+From\+Socket@{extract\+Headers\+From\+Socket}!request.\+c@{request.\+c}}
+\subsubsection{\texorpdfstring{extract\+Headers\+From\+Socket()}{extractHeadersFromSocket()}}
+{\footnotesize\ttfamily char $\ast$ extract\+Headers\+From\+Socket (\begin{DoxyParamCaption}\item[{int}]{socket }\end{DoxyParamCaption})}
+
+
+
+Fonction utilitaire pour extraire les headers d\textquotesingle{}un socket (pour les requêtes H\+T\+TP) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket} & Socket vers le client \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char$\ast$ Tableau d\textquotesingle{}octets contenant les headers 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file request.\+c.
+
+\mbox{\Hypertarget{request_8c_ac88eaa2a6df7bbc8fd5d68e6c77f6177}\label{request_8c_ac88eaa2a6df7bbc8fd5d68e6c77f6177}} 
+\index{request.\+c@{request.\+c}!read\+All@{read\+All}}
+\index{read\+All@{read\+All}!request.\+c@{request.\+c}}
+\subsubsection{\texorpdfstring{read\+All()}{readAll()}}
+{\footnotesize\ttfamily char $\ast$ read\+All (\begin{DoxyParamCaption}\item[{int}]{std }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de récuperer tout ce qui est écrit dans un flux. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std} & Flux dans lequel récuperer les données \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char$\ast$ Tableau d\textquotesingle{}octets contenant les données récupéré dans le flux 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file request.\+c.
+
+\mbox{\Hypertarget{request_8c_a239ee51386b91b472f59325c1fa05938}\label{request_8c_a239ee51386b91b472f59325c1fa05938}} 
+\index{request.\+c@{request.\+c}!read\+Request@{read\+Request}}
+\index{read\+Request@{read\+Request}!request.\+c@{request.\+c}}
+\subsubsection{\texorpdfstring{read\+Request()}{readRequest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{request_8h_a4a26bb67a195367b798ac6ad628c21a2}{request}} $\ast$ read\+Request (\begin{DoxyParamCaption}\item[{int}]{socket }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant le parsage de la requête via le socket (lis les données client) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket} & Le socket vers le client, permettant de lire les données reçu par le biais du navigateur ou d\textquotesingle{}un client \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+request La requête parsée avec les données du client. 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file request.\+c.
+

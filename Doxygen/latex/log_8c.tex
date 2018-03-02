@@ -1,0 +1,105 @@
+\hypertarget{log_8c}{}\section{Logs/log.c File Reference}
+\label{log_8c}\index{Logs/log.\+c@{Logs/log.\+c}}
+{\ttfamily \#include \char`\"{}log.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{log_8c_ac3b2516fa2173b00285160da8d329bd2}{log\+\_\+ouvrir}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Fonction permettant l\textquotesingle{}ouverture d\textquotesingle{}un fichier de log. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{log_8c_aa376ac748e19270f48b60e7febaa0d0e}{log\+\_\+ecrire}} (F\+I\+LE $\ast$f, char $\ast$content)
+\begin{DoxyCompactList}\small\item\em Fonction permettant l\textquotesingle{}écriture dans un fichier de log. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{log_8c_a5b31dabbd6c3776b39343fb4e696c784}{log\+\_\+write\+\_\+to\+\_\+disk}} (F\+I\+LE $\ast$f)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de forcer l\textquotesingle{}écriture dans le fichier. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{log_8c_aff54dacf3182c7416b0c11aa845d3918}{log\+\_\+fermer}} (F\+I\+LE $\ast$f)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de fermer le fichier de log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{log_8c_aa376ac748e19270f48b60e7febaa0d0e}\label{log_8c_aa376ac748e19270f48b60e7febaa0d0e}} 
+\index{log.\+c@{log.\+c}!log\+\_\+ecrire@{log\+\_\+ecrire}}
+\index{log\+\_\+ecrire@{log\+\_\+ecrire}!log.\+c@{log.\+c}}
+\subsubsection{\texorpdfstring{log\+\_\+ecrire()}{log\_ecrire()}}
+{\footnotesize\ttfamily void log\+\_\+ecrire (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{char $\ast$}]{content }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant l\textquotesingle{}écriture dans un fichier de log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Pointeur sur le fichier \\
+\hline
+{\em content} & Contenu à inserer dans le fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Si succés 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file log.\+c.
+
+\mbox{\Hypertarget{log_8c_aff54dacf3182c7416b0c11aa845d3918}\label{log_8c_aff54dacf3182c7416b0c11aa845d3918}} 
+\index{log.\+c@{log.\+c}!log\+\_\+fermer@{log\+\_\+fermer}}
+\index{log\+\_\+fermer@{log\+\_\+fermer}!log.\+c@{log.\+c}}
+\subsubsection{\texorpdfstring{log\+\_\+fermer()}{log\_fermer()}}
+{\footnotesize\ttfamily void log\+\_\+fermer (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de fermer le fichier de log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Le fichier à fermer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\+Ssi succés 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file log.\+c.
+
+\mbox{\Hypertarget{log_8c_ac3b2516fa2173b00285160da8d329bd2}\label{log_8c_ac3b2516fa2173b00285160da8d329bd2}} 
+\index{log.\+c@{log.\+c}!log\+\_\+ouvrir@{log\+\_\+ouvrir}}
+\index{log\+\_\+ouvrir@{log\+\_\+ouvrir}!log.\+c@{log.\+c}}
+\subsubsection{\texorpdfstring{log\+\_\+ouvrir()}{log\_ouvrir()}}
+{\footnotesize\ttfamily void log\+\_\+ouvrir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant l\textquotesingle{}ouverture d\textquotesingle{}un fichier de log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Le chemin du fichier de log \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+F\+I\+L\+E$\ast$ Pointeur sur le fichier 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file log.\+c.
+
+\mbox{\Hypertarget{log_8c_a5b31dabbd6c3776b39343fb4e696c784}\label{log_8c_a5b31dabbd6c3776b39343fb4e696c784}} 
+\index{log.\+c@{log.\+c}!log\+\_\+write\+\_\+to\+\_\+disk@{log\+\_\+write\+\_\+to\+\_\+disk}}
+\index{log\+\_\+write\+\_\+to\+\_\+disk@{log\+\_\+write\+\_\+to\+\_\+disk}!log.\+c@{log.\+c}}
+\subsubsection{\texorpdfstring{log\+\_\+write\+\_\+to\+\_\+disk()}{log\_write\_to\_disk()}}
+{\footnotesize\ttfamily void log\+\_\+write\+\_\+to\+\_\+disk (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de forcer l\textquotesingle{}écriture dans le fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Pointeur sur le fichier \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 27 of file log.\+c.
+

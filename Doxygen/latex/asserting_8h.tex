@@ -1,0 +1,122 @@
+\hypertarget{asserting_8h}{}\section{Tests/asserting.h File Reference}
+\label{asserting_8h}\index{Tests/asserting.\+h@{Tests/asserting.\+h}}
+
+
+Fichier definissant les différentes fonctions permettant les tests unitaires.  
+
+
+{\ttfamily \#include \char`\"{}router.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{asserting_8h_a4476ac07e4b7fb519abcff414b58e424}{assert\+H\+T\+M\+L\+Equals}} (char $\ast$title, char $\ast$expected, char $\ast$actual)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour verifier la différence entre un texte et du contenu H\+T\+ML. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{asserting_8h_a3d697e4a83010f46bd913ccd31065081}{assert\+Equals}} (char $\ast$title, char $\ast$expected, char $\ast$actual)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour verifier la différence entre deux chaines. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{asserting_8h_a4cc6ebf5a48199f71ffd90780e9f7b0c}{assert\+File\+Equals}} (char $\ast$title, char $\ast$filename, char $\ast$crypted\+\_\+uncrypted)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour verifier la différence entre deux fichiers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{asserting_8h_a144480b8939657f3ed52d7ca0ec5a549}{assert\+File\+Exist}} (char $\ast$title, char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Fonction appelée pour verifier l\textquotesingle{}existence d\textquotesingle{}un fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichier definissant les différentes fonctions permettant les tests unitaires. 
+
+\begin{DoxyAuthor}{Author}
+Valerian Acier 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+26 fevrier 2018
+\end{DoxyDate}
+Contient différentes déclarations de fonctions permettant de réaliser des assertions 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{asserting_8h_a3d697e4a83010f46bd913ccd31065081}\label{asserting_8h_a3d697e4a83010f46bd913ccd31065081}} 
+\index{asserting.\+h@{asserting.\+h}!assert\+Equals@{assert\+Equals}}
+\index{assert\+Equals@{assert\+Equals}!asserting.\+h@{asserting.\+h}}
+\subsubsection{\texorpdfstring{assert\+Equals()}{assertEquals()}}
+{\footnotesize\ttfamily void assert\+Equals (\begin{DoxyParamCaption}\item[{char $\ast$}]{title,  }\item[{char $\ast$}]{expected,  }\item[{char $\ast$}]{actual }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour verifier la différence entre deux chaines. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Le nom du test (Chaque test est nommé pour connaitre lequel echoue) \\
+\hline
+{\em expected} & Le contenu attendu \\
+\hline
+{\em actual} & Le contenu reçu \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file asserting.\+c.
+
+\mbox{\Hypertarget{asserting_8h_a4cc6ebf5a48199f71ffd90780e9f7b0c}\label{asserting_8h_a4cc6ebf5a48199f71ffd90780e9f7b0c}} 
+\index{asserting.\+h@{asserting.\+h}!assert\+File\+Equals@{assert\+File\+Equals}}
+\index{assert\+File\+Equals@{assert\+File\+Equals}!asserting.\+h@{asserting.\+h}}
+\subsubsection{\texorpdfstring{assert\+File\+Equals()}{assertFileEquals()}}
+{\footnotesize\ttfamily void assert\+File\+Equals (\begin{DoxyParamCaption}\item[{char $\ast$}]{title,  }\item[{char $\ast$}]{original,  }\item[{char $\ast$}]{crypted\+\_\+uncrypted }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour verifier la différence entre deux fichiers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Le nom du test (Chaque test est nommé pour connaitre lequel echoue) \\
+\hline
+{\em filename} & Le path du fichier avec le contenu attendu \\
+\hline
+{\em crypted\+\_\+uncrypted} & Le path du fichier avec le contenu reçu \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file asserting.\+c.
+
+\mbox{\Hypertarget{asserting_8h_a144480b8939657f3ed52d7ca0ec5a549}\label{asserting_8h_a144480b8939657f3ed52d7ca0ec5a549}} 
+\index{asserting.\+h@{asserting.\+h}!assert\+File\+Exist@{assert\+File\+Exist}}
+\index{assert\+File\+Exist@{assert\+File\+Exist}!asserting.\+h@{asserting.\+h}}
+\subsubsection{\texorpdfstring{assert\+File\+Exist()}{assertFileExist()}}
+{\footnotesize\ttfamily void assert\+File\+Exist (\begin{DoxyParamCaption}\item[{char $\ast$}]{title,  }\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour verifier l\textquotesingle{}existence d\textquotesingle{}un fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Le nom du test (Chaque test est nommé pour connaitre lequel echoue) \\
+\hline
+{\em path} & Le path où verifier l\textquotesingle{}existence du fichier \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{asserting_8h_a4476ac07e4b7fb519abcff414b58e424}\label{asserting_8h_a4476ac07e4b7fb519abcff414b58e424}} 
+\index{asserting.\+h@{asserting.\+h}!assert\+H\+T\+M\+L\+Equals@{assert\+H\+T\+M\+L\+Equals}}
+\index{assert\+H\+T\+M\+L\+Equals@{assert\+H\+T\+M\+L\+Equals}!asserting.\+h@{asserting.\+h}}
+\subsubsection{\texorpdfstring{assert\+H\+T\+M\+L\+Equals()}{assertHTMLEquals()}}
+{\footnotesize\ttfamily void assert\+H\+T\+M\+L\+Equals (\begin{DoxyParamCaption}\item[{char $\ast$}]{title,  }\item[{char $\ast$}]{expected,  }\item[{char $\ast$}]{actual }\end{DoxyParamCaption})}
+
+
+
+Fonction appelée pour verifier la différence entre un texte et du contenu H\+T\+ML. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Le nom du test (Chaque test est nommé pour connaitre lequel echoue) \\
+\hline
+{\em expected} & Le contenu attendu \\
+\hline
+{\em actual} & Le contenu reçu \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file asserting.\+c.
+
